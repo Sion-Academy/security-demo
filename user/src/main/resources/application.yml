@@ -1,11 +1,3 @@
 server:
-  port: 9093
+  port: 9001
 
-spring:
-  application:
-    name: user
-
-  datasource:
-    url: jdbc:postgresql://localhost:5432/mydatabase
-    username: postgres
-    password: postgres

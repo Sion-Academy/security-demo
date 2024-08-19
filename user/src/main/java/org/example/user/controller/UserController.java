@@ -1,5 +1,7 @@
 package org.example.user.controller;
 
+import org.example.common.model.user.UserModel;
+import org.example.common.response.Response;
 import org.example.user.entity.UserEntity;
 import org.example.user.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +18,9 @@ public class UserController {
     private IUserService userService;
 
     @GetMapping("/{id}")
-    public UserEntity getUserById(@PathVariable Long id) {
-        return userService.getById(id);
+    public Response<?> getUserById(@PathVariable Long id) {
+        UserModel userById = userService.getUserById(id);
+        return Response.success(userById);
     }
 
 

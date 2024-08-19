@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: 8d5fce2e-5e49-11ef-9ff5-2cf05ddc2399
+        server-addr: localhost:8848
+        enabled: false
+      config:
+        namespace: 8d5fce2e-5e49-11ef-9ff5-2cf05ddc2399
+        server-addr: localhost:8848
+        file-extension: yaml
+        prefix: ${spring.application.name}
+        enabled: false
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: postgres
+    password: postgres

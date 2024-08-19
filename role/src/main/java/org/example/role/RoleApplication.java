@@ -1,18 +1,17 @@
-package org.example.user;
+package org.example.role;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.mybatis.spring.annotation.MapperScan;
 
-
-@MapperScan({"org.example.user.dao"})
-@EnableFeignClients({"org.example.*"})
+@MapperScan({"org.example.role.dao"})
+@EnableFeignClients
 @SpringBootApplication
-public class UserApplication {
+public class RoleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(UserApplication.class, args);
+        SpringApplication.run(RoleApplication.class, args);
     }
 
 }

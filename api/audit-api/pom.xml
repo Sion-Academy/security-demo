@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<artifactId>user-api</artifactId>
+	<artifactId>audit-api</artifactId>
 	<version>0.0.1</version>
-	<name>user-api</name>
-	<description>user-api</description>
+	<name>audit-api</name>
+	<description>audit-api</description>
 
 	<dependencies>
 		<dependency>
